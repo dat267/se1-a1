@@ -7,7 +7,6 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Objects;
 import java.util.stream.Stream;
 
 /**
@@ -30,7 +29,7 @@ public class Engine {
      * @return The number of documents loaded.
      */
     public int loadDocs(String dirname) {
-        if (Objects.equals(dirname, ""))
+        if (dirname.isEmpty())
             return 0;
         try (Stream<Path> paths = Files.list(Paths.get(dirname))) {
             paths.filter(Files::isRegularFile)

@@ -13,6 +13,7 @@ public class Main {
     public static void main(String[] args) {
     	Word word=Word.createWord("'s");
         System.out.println(word.getSuffix());
+        System.out.println(word.equals(null));
         boolean canLoadStopWords = Word.loadStopWords("stopwords2.txt");
         if (canLoadStopWords) {
             System.out.println("Word.loadStopWords(): incorrect return value (expected: false)");

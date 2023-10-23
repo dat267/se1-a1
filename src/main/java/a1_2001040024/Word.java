@@ -51,20 +51,22 @@ public class Word {
         // string as suffix
         suffix = parts.length == 2 ? parts[1] : "";
         // Word is valid if
-        valid = !text.isEmpty() // Text part is not empty
-                && text.matches(".*\\p{L}.*") // Text part has at least 1 letter
+        valid = text.matches(".*\\p{L}.*") // Text part has at least 1 letter
                 && !prefix.matches(".*\\p{Alnum}.*") // Prefix doesn't contain alphanumeric
                 && !suffix.matches(".*\\p{Alnum}.*"); // Suffix doesn't contain alphanumeric
+        // Detect text ending with 's and set suffix
+        if (text.endsWith("'s")) {
+            text = text.substring(0, text.length() - 2);
+            suffix = "'s" + suffix;
+        }
+        // If text part becomes empty, word is invalid
+        if (text.isEmpty()) {
+            valid = false;
+        }
         // Set empty suffix and prefix, text as rawText when word is invalid
         if (!valid) {
             prefix = suffix = "";
             text = rawText;
-        }
-        // Detect text ending with 's and set suffix
-        parts = text.split("'s$", 2);
-        if (parts.length == 2) {
-            text = parts[0];
-            suffix = "'s" + suffix;
         }
         return new Word(prefix, text, suffix, valid);
     }
