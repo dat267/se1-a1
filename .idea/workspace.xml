@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="165fb5a2-0591-479f-92c8-1022ade87586" name="Changes" comment="Moved to maven build system">
-      <change afterPath="$PROJECT_DIR$/src/main/java/a1_2001040024/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dummy/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dummy/Doc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dummy/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dummy/Match.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dummy/Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dummy/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dummy/Word.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/a1_2001040024/Doc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/a1_2001040024/Doc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/a1_2001040024/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/a1_2001040024/Engine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/a1_2001040024/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/a1_2001040024/Match.java" afterDir="false" />
@@ -50,6 +56,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -63,6 +70,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -92,6 +100,7 @@
       <workItem from="1697966847227" duration="92000" />
       <workItem from="1697967013740" duration="244000" />
       <workItem from="1698054321302" duration="2622000" />
+      <workItem from="1698067259706" duration="7041000" />
     </task>
     <task id="LOCAL-00001" summary="Moved to maven build system">
       <option name="closed" value="true" />
@@ -119,6 +128,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Moved to maven build system" />
     <option name="LAST_COMMIT_MESSAGE" value="Moved to maven build system" />
   </component>

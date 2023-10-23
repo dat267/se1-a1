@@ -33,8 +33,10 @@ public class Engine {
         if (Objects.equals(dirname, ""))
             return 0;
         try (Stream<Path> paths = Files.list(Paths.get(dirname))) {
-            paths.filter(Files::isRegularFile).sorted()
-                    .filter(path -> path.toString().endsWith(".txt")).forEach(this::addDoc);
+            paths.filter(Files::isRegularFile)
+                 .sorted()
+                 .filter(path -> path.toString().endsWith(".txt"))
+                 .forEach(this::addDoc);
             return this.docs.size();
         } catch (IOException e) {
             // System.out.println("An error occurred while loading documents: " + e.getMessage());

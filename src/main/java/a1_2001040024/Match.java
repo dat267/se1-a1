@@ -1,9 +1,9 @@
 package a1_2001040024;
 
 /**
- * Represents a match between a document and a word in a search query. Each Match object stores
- * information about the document, word, frequency, and first index of the match. Implements the
- * Comparable interface to enable sorting matches based on the first index.
+ * Represents a match between a document and a word in a search query. Each Match object stores information about the
+ * document, word, frequency, and first index of the match. Implements the Comparable interface to enable sorting
+ * matches based on the first index.
  */
 public class Match implements Comparable<Match> {
     private final int freq;
@@ -12,12 +12,12 @@ public class Match implements Comparable<Match> {
     private final Word word;
 
     /**
-     * Constructs a Match object with the provided document, word, frequency of the word in the
-     * document, and the first position of the word in the document.
+     * Constructs a Match object with the provided document, word, frequency of the word in the document, and the first
+     * position of the word in the document.
      *
-     * @param d the document in which the match was found
-     * @param w the word that was matched
-     * @param freq the frequency of the match
+     * @param d          the document in which the match was found
+     * @param w          the word that was matched
+     * @param freq       the frequency of the match
      * @param firstIndex the first index of the match
      */
     public Match(Doc d, Word w, int freq, int firstIndex) {
@@ -64,13 +64,13 @@ public class Match implements Comparable<Match> {
     }
 
     /**
-     * Compares this Match with another Match object by the first index. This method obeys the
-     * standard behavior specified by Java. Match object A is greater than Match object B if the
-     * first index of A is greater than the first index of B.
+     * Compares this Match with another Match object by the first index. This method obeys the standard behavior
+     * specified by Java. Match object A is greater than Match object B if the first index of A is greater than the
+     * first index of B.
      *
      * @param o the other Match object
-     * @return a negative integer, zero, or a positive integer as this object is less than, equal
-     *         to, or greater than the specified object
+     * @return a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than
+     * the specified object
      */
     @Override
     public int compareTo(Match o) {

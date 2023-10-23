@@ -7,18 +7,16 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 /**
- * Represents a document which has a title and a body. The title and body of a document are lists of
- * Word objects.
+ * Represents a document which has a title and a body. The title and body of a document are lists of Word objects.
  */
 public class Doc {
     private final List<Word> title;
     private final List<Word> body;
 
     /**
-     * A constructor which receives the raw text of a document and extracts the title and body parts
-     * from that. Documents are provided as text files (.txt) in the docs directory under the
-     * project’s root directory. Each text file contains two lines. The first line is the title and
-     * the second line is the body.
+     * A constructor which receives the raw text of a document and extracts the title and body parts from that.
+     * Documents are provided as text files (.txt) in the docs directory under the project’s root directory. Each text
+     * file contains two lines. The first line is the title and the second line is the body.
      *
      * @param content the raw text of a document
      */
@@ -39,8 +37,7 @@ public class Doc {
         // If the line to read exist (the index is less than the number of lines)
         if (lines.length > index) {
             // Create and return a List of Word objects by splitting the line
-            return Arrays.stream(lines[index].split(" ")).map(Word::createWord)
-                    .collect(Collectors.toList());
+            return Arrays.stream(lines[index].split(" ")).map(Word::createWord).collect(Collectors.toList());
         }
         // Return an empty ArrayList
         return new ArrayList<>();
@@ -75,13 +72,11 @@ public class Doc {
     }
 
     /**
-     * Checks the equality of two Doc objects. Two Doc objects are equal if their titles and bodies
-     * contain the same words in the same order. To determine if two words are equal, we use the
-     * equals() method from the Word class.
+     * Checks the equality of two Doc objects. Two Doc objects are equal if their titles and bodies contain the same
+     * words in the same order. To determine if two words are equal, we use the equals() method from the Word class.
      *
      * @param o the object to compare this Doc with
-     * @return true if the given object is a Doc and has the same title and body as this Doc, false
-     *         otherwise
+     * @return true if the given object is a Doc and has the same title and body as this Doc, false otherwise
      */
     @Override
     public boolean equals(Object o) {
