@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="165fb5a2-0591-479f-92c8-1022ade87586" name="Changes" comment="Created a dummy, and refactor code for difference">
+    <list default="true" id="165fb5a2-0591-479f-92c8-1022ade87586" name="Changes" comment="Final version before submission">
+      <change afterPath="$PROJECT_DIR$/src/main/java/a1_2001040024.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/a1_2001040024/Doc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/a1_2001040024/Doc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/a1_2001040024/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/a1_2001040024/Engine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/a1_2001040024/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/a1_2001040024/Word.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +88,7 @@
       <workItem from="1697966847227" duration="92000" />
       <workItem from="1697967013740" duration="244000" />
       <workItem from="1698054321302" duration="2622000" />
-      <workItem from="1698067259706" duration="8565000" />
+      <workItem from="1698067259706" duration="9721000" />
     </task>
     <task id="LOCAL-00001" summary="Moved to maven build system">
       <option name="closed" value="true" />
@@ -108,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698074651691</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Final version before submission">
+      <option name="closed" value="true" />
+      <created>1698076027630</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698076027630</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +135,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Moved to maven build system" />
     <MESSAGE value="Created a dummy, and refactor code for difference" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a dummy, and refactor code for difference" />
+    <MESSAGE value="Final version before submission" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final version before submission" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

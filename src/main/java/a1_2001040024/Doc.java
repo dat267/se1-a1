@@ -86,6 +86,6 @@ public class Doc {
             return false;
         Doc doc;
         doc = (Doc) o;
-        return this.title.equals(doc.title)&&this.body.equals(doc.body);
+        return this.title.equals(doc.title) && this.body.equals(doc.body);
     }
 }

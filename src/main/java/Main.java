@@ -11,9 +11,9 @@ import a1_2001040024.Word;
 
 public class Main {
     public static void main(String[] args) {
-    	Word word=Word.createWord("'s");
+    	Word word=Word.createWord("(other's)");
         System.out.println(word.getSuffix());
-        System.out.println(word.equals(null));
+        System.out.println(word.isValid());
         boolean canLoadStopWords = Word.loadStopWords("stopwords2.txt");
         if (canLoadStopWords) {
             System.out.println("Word.loadStopWords(): incorrect return value (expected: false)");
