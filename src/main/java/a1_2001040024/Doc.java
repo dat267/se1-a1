@@ -80,10 +80,12 @@ public class Doc {
      */
     @Override
     public boolean equals(Object o) {
-        if (this == o)
+        if (this == o) {
             return true;
-        if (!(o instanceof Doc))
+        }
+        if (!(o instanceof Doc)) {
             return false;
+        }
         Doc doc;
         doc = (Doc) o;
         return this.title.equals(doc.title) && this.body.equals(doc.body);

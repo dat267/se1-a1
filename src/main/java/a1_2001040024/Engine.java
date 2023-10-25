@@ -29,8 +29,9 @@ public class Engine {
      * @return The number of documents loaded.
      */
     public int loadDocs(String dirname) {
-        if (dirname.isEmpty())
+        if (dirname.isEmpty()) {
             return 0;
+        }
         try (Stream<Path> paths = Files.list(Paths.get(dirname))) {
             paths.filter(Files::isRegularFile)
                  .sorted()

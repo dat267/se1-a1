@@ -83,7 +83,12 @@ public class Result implements Comparable<Result> {
      */
     public String htmlHighlight() {
         Set<Word> matchedWords = this.matches.stream().map(Match::getWord).collect(Collectors.toSet());
-        return "<h3>" + this.highlightWords(this.doc.getTitle(), matchedWords, "<u>") + "</h3>" + "<p>" + this.highlightWords(this.doc.getBody(), matchedWords, "<b>") + "</p>";
+        return "<h3>" +
+               this.highlightWords(this.doc.getTitle(), matchedWords, "<u>") +
+               "</h3>" +
+               "<p>" +
+               this.highlightWords(this.doc.getBody(), matchedWords, "<b>") +
+               "</p>";
     }
 
     /**

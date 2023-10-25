@@ -95,8 +95,9 @@ public class Word {
     public boolean isKeyword() {
         if (this.valid) {
             return Word.stopWords == null || !Word.stopWords.contains(this.text.toLowerCase());
-        } else
+        } else {
             return false;
+        }
     }
 
     /**
@@ -155,10 +156,12 @@ public class Word {
      */
     @Override
     public boolean equals(Object o) {
-        if (this == o)
+        if (this == o) {
             return true;
-        if (!(o instanceof Word))
+        }
+        if (!(o instanceof Word)) {
             return false;
+        }
         Word word;
         word = (Word) o;
         return this.text.equalsIgnoreCase(word.text);
